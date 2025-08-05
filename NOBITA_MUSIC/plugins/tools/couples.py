@@ -106,14 +106,21 @@ async def ctest(_, message):
          img.save(f'test_{cid}.png')
     
          TXT = f"""
-**ᴛᴏᴅᴀʏ's ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ :
+💞 𝓣𝓸𝓭𝓪𝔂'𝓼 𝓒𝓾𝓽𝓮 𝓒𝓸𝓾𝓹𝓵𝓮 𝓐𝓵𝓮𝓻𝓽 💞
 
-{N1} + {N2} = 💚
+╭─────────────★彡
+┃ 👫 {c1_name}  
+┃ 💘 +  
+┃ 🧑‍🤝‍🧑 {c2_name}
+╰─────────────★彡
+           ❣️ 𝐏𝐞𝐫𝐟𝐞𝐜𝐭 𝐌𝐚𝐭𝐜𝐡 ❣️
 
-ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
+📅 Next magical couple reveal:  
+👉 _{tomorrow}_ ✨
+
+💌 Stay tuned for more love stories!
 """
-    
-         await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
+await message.reply_photo(b, caption=TXT)
     )
          await msg.delete()
          a = upload_file(f"test_{cid}.png")
